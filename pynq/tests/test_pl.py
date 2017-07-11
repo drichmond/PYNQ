@@ -32,10 +32,11 @@ __copyright__ = "Copyright 2016, Xilinx"
 __email__ = "pynq_support@xilinx.com"
 
 import os
+import warnings
 import pytest
 from pynq import Overlay
 from pynq import Clocks
-from pynq.ps import DEFAULT_CLK_MHZ
+from pynq.ps import DEFAULT_CLK_MHZ, Clocks, CPU_ARCH_IS_SUPPORTED, CPU_ARCH
 
 bitfile1 = 'base.bit'
 bitfile2 = 'interface.bit'
@@ -53,7 +54,6 @@ bitfile2_fclk0_mhz = DEFAULT_CLK_MHZ
 bitfile2_fclk1_mhz = DEFAULT_CLK_MHZ
 bitfile2_fclk2_mhz = DEFAULT_CLK_MHZ
 bitfile2_fclk3_mhz = DEFAULT_CLK_MHZ
-
 
 @pytest.mark.run(order=2)
 def test_overlay():

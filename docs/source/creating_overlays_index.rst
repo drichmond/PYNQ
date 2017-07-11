@@ -12,6 +12,6 @@ Creating Overlays
    overlay_design_methodology/data_transfer
    overlay_design_methodology/cffi
    overlay_design_methodology/iop_index
-   overlay_design_methodology/example_notebooks
+   overlay_design_methodology/example_notebook
    overlay_design_methodology/packaging_overlays
    overlay_design_methodology/attributes.ipynb
