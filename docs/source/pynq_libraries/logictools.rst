@@ -30,7 +30,7 @@ The state diagram for the blocks is shown below:
 Any one of these hardware blocks, or any combination can be configured and run
 synchronously following the state diagram above. 
 
-Operating states
+Operating States
 ----------------
 
 RESET
@@ -42,9 +42,9 @@ will remain in the reset state until it has been configured using the
 
 In the reset state, all IO accessible to the logictools overlay are disconnected
 from the main logictools hardware blocks. This prevents the inadvertent driving
-of any external circuitry that is connected to the board. This is done by 
-configuring the interface switch to disconnect all IO from the internal 
-hardware. 
+of any external circuitry that is connected to the board. This is done by
+configuring the interface switch to disconnect all IO from the internal
+hardware.
 
 The Pattern Generator contains BRAM to store the pattern to be generated. The
 BRAM is configured with zeros in this state.
